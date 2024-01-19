@@ -1,0 +1,3 @@
+day01 - 
+    create react app - npx create-react-app netflix-app
+    configure tailwindcss    
