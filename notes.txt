@@ -1,3 +1,20 @@
 day01 - 
     create react app - npx create-react-app netflix-app
     configure tailwindcss    
+
+Website design plan
+    signup page
+    browser pre authentication screen
+    browser post authentication screen
+    header
+    main movie playing
+        trailer in background
+        title and description
+        movie suggestions
+    netflix gpt
+        search bar  
+        movie suggestions
+
+day02 - 
+    added login and header page
+    added sign up and sign in form with toggle feature
