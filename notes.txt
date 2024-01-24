@@ -3,10 +3,12 @@ day01 -
     configure tailwindcss    
 
 Website design plan
-    signup page
+    signup page/signup page
+        form validations
     browser pre authentication screen
     browser post authentication screen
     header
+        netflix logo
     main movie playing
         trailer in background
         title and description
@@ -17,4 +19,46 @@ Website design plan
 
 day02 - 
     added login and header page
+    browser routing
     added sign up and sign in form with toggle feature
+        form validations
+    firebase
+        can also host applications on firebase, similar to other websites like heruko, vercel, aws, etc.
+        gives firebase configurations - apiKey, authDomain, storageBucket, projectId, etc.
+            npm install firebase
+            npm install -g firebase-tools
+        how to deploy to firebase
+            firebase login // check login 
+            firebase init // initializes firebase
+                Setup Firebase features - Local Deployment/ Auto Deployment from github on every new commit
+                Select Project to use = whatever project you have setup in firebase
+                what do you want to use your public directory = build
+                Condfigure as a single-page app - No
+                Set up automatic builds and deploys with github = N
+
+                build folder is added - firebase use this build folder to deploy
+
+        to deploy do - 
+            npm run build
+            firebase deploy
+    firebase setup
+    deploying to production server
+    creating a sign up user account
+
+ 01 - Test123!   
+
+day 03 - 11am/21Jan - 
+    -> adding an appStore(add configureStore, which take a configuration - comprises of reducer,
+        which containing reducer from reducers from different slices) 
+    -> userSlice(with addUser and removeUser reducers, export userSlice.actions)
+    -> add store to root application file
+    -> onAuthStateChanged api
+
+
+
+
+
+
+
+
+

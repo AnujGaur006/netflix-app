@@ -1,6 +1,7 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, useNavigate } from "react-router-dom";
 import Browse from "./browse";
-import Login from "./login"
+import Login from "./login";
+import { useDispatch } from "react-redux";
 
 const Body = () => {
     const appRouter = createBrowserRouter([
@@ -12,7 +13,8 @@ const Body = () => {
             path: "/browse",
             element: <Browse/>
         },
-    ])
+    ]);
+
     return ( 
         <div>
            <RouterProvider router={appRouter}/>
