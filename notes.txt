@@ -1,4 +1,4 @@
-day01 - 
+checkpoint01 - 
     create react app - npx create-react-app netflix-app
     configure tailwindcss    
 
@@ -17,7 +17,7 @@ Website design plan
         search bar  
         movie suggestions
 
-day02 - 
+checkpoint02 - 
     added login and header page
     browser routing
     added sign up and sign in form with toggle feature
@@ -47,12 +47,21 @@ day02 -
 
  01 - Test123!   
 
-day 03 - 11am/21Jan - 
+checkpoint03 - 11am/21Jan - 
     -> adding an appStore(add configureStore, which take a configuration - comprises of reducer,
         which containing reducer from reducers from different slices) 
     -> userSlice(with addUser and removeUser reducers, export userSlice.actions)
     -> add store to root application file
     -> onAuthStateChanged api
+
+checkpoint04 - 
+    -> register to tmdb, provides api to fetch data related to movies/tvshows
+    -> REACT.STRICT_MODE - some times we see api calls being made twice, this is react thing which is enabled in
+        development mode, in order to check inconsistencies bw data/rendering cycle
+    -> create movieSlice, to store movies and trailerVidoes info
+    -> how the main page and secondary tiles will look like
+    -> fetched videos data
+    -> embedded video, autoplay and mute    
 
 
 

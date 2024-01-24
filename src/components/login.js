@@ -12,7 +12,6 @@ const Login = () => {
     const [signIn, setSignIn] = useState(true);
     const [errorMsg,setErrorMsg] = useState(null);
     const dispatch = useDispatch();
-    const navigate = useNavigate();
     const email = useRef(null);
     const password = useRef(null);
     const fullName = useRef(null);
@@ -25,16 +24,13 @@ const Login = () => {
          // to disable default form submission behavior which reloads screen post submission
         const msg = signIn ? validData(email.current.value, password.current.value) : 
                             validSignUpData(fullName.current.value, email.current.value, password.current.value);
-        console.log(msg);
         setErrorMsg(msg);    
         if(msg) return;
 
         if(signIn){
             signInWithEmailAndPassword(auth, email.current.value, password.current.value)
                 .then((userCredential) => {
-                    const user = userCredential.user;  
-                    // console.log(user);
-                    // navigate("/browse");
+                    const user = userCredential.user; 
                 }).catch((error) => {
                     setErrorMsg(error.code + "-" + error.message);
                 });
@@ -45,18 +41,11 @@ const Login = () => {
                     updateProfile(user, {displayName : fullName.current.value})
                         .then(() => {
                             const { uid, email, displayName} = auth.currentUser;
-                            dispatch(addUser({
-                                        uid : uid, 
-                                        email : email,
-                                        displayName : displayName,
-                                    })
-                                );
-                            // navigate("/browse");
+                            dispatch(addUser({uid : uid, email : email, displayName : displayName,}));
                         })
                         .catch((error) => {
                             setErrorMsg(error.message);
                         })
-                    console.log(user);
                 }).catch((error) => {
                     setErrorMsg(error.code + "-" + error.message);
                 });

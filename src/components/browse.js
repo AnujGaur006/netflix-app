@@ -1,12 +1,15 @@
 import Header from './header';
+import useNowPlayingMovies from './hooks/useNowPlayingMovies';
+import MainPage from './mainPage';
 
 const Browse = () => {
+    useNowPlayingMovies();
+
     return (
         <div>
             <Header/>
-             <div>Browse</div>
+            <MainPage/>
         </div>
-       
     );
 };
 
