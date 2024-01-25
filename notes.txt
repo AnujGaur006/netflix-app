@@ -61,7 +61,11 @@ checkpoint04 -
     -> create movieSlice, to store movies and trailerVidoes info
     -> how the main page and secondary tiles will look like
     -> fetched videos data
-    -> embedded video, autoplay and mute    
+    -> embedded video, autoplay and mute
+
+checkpoint05 -
+    -> add gptSearchBtn, add GptSlice and toggle toggle date
+    -> Add Search Box        
 
 
 

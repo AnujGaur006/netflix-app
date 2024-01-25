@@ -7,3 +7,17 @@ export const MOVIE_API_OPTIONS = {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNDIxMTNlODUyYTU2YmFiMGRhMTNkNzBjOWQ2NzM1YiIsInN1YiI6IjY1YjBiZWNlMjc5MGJmMDE5MzU2MjRiNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.SFVSqyx2paOeWtQT1qb8o96TgKY9NNcryyOizUkq6So'
     }
 };
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w780";
+export const backgroundImageStyle = {
+    height: '100vh',
+    margin: 0,
+    background: `url(${BACKGND_IMAGE}) no-repeat center center fixed`,
+    backgroundSize: 'cover',
+  };
+
+export const supportedLang = [
+    {"key":"en", name:"English"},
+    {"key":"hindi", name:"Hindi"},
+    {"key":"jpn", name:"Japenese"},
+    {"key":"itl", name:"Italian"},
+]

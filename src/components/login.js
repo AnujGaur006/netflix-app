@@ -1,12 +1,11 @@
 import { useRef, useState } from "react";
 import Header from "./header";
-import { BACKGND_IMAGE } from "../utils/constants";
+import { backgroundImageStyle } from "../utils/constants";
 import { validData , validSignUpData} from "../utils/validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { addUser} from "../utils/userSlice";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router";
 
 const Login = () => {
     const [signIn, setSignIn] = useState(true);
@@ -51,13 +50,6 @@ const Login = () => {
                 });
         }
      };
-
-     const backgroundImageStyle = {
-        height: '100vh',
-        margin: 0,
-        background: `url(${BACKGND_IMAGE}) no-repeat center center fixed`,
-        backgroundSize: 'cover',
-      };
 
     return <div style={backgroundImageStyle}>
         <Header/>  
