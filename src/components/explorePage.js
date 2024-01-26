@@ -6,10 +6,11 @@ const ExplorePage = () => {
 
     return (
     <div className="bg-black">
-        <div className="-mt-64 relative z-20">
-            <MovieTile title={"Now Trending"} movies={movies.nowPlayingMovies}/>
-            <MovieTile title={"Popular"} movies={movies.popularMovies}/>
-            <MovieTile title={"Action,Thriller"} movies={movies.nowPlayingMovies}/>
+        <div className="-mt-60 relative z-20">
+            <MovieTile title={"Now Trending Movies"} movies={movies.nowPlayingMovies}/>
+            <MovieTile title={"Popular Movies"} movies={movies.popularMovies}/>
+            <MovieTile title={"Top Rated Movies"} movies={movies.topRatedMovies}/>
+            <MovieTile title={"Upcoming Movies"} movies={movies.upcomingMovies}/>
         </div>
     </div>);
 };

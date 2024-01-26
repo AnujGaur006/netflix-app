@@ -65,7 +65,19 @@ checkpoint04 -
 
 checkpoint05 -
     -> add gptSearchBtn, add GptSlice and toggle toggle date
-    -> Add Search Box        
+    -> Add Search Box   
+    -> gpt suggestion feature cannot be explored due to non-availability of api
+
+checkpoint06 - 
+    -> what more movies tiles to add - 
+        -> latest releases 
+        -> Genre Categories
+            -> Thriller Movies
+            -> Most Watched Last Year
+            -> Horror
+            -> Family
+        -> Coming Soon
+        -> Popular Movies    
 
 
 

@@ -8,11 +8,12 @@ const MainPage = () => {
     if(!movies) return ;
 
     const movie = movies[Math.floor(Math.random() * movies.length)];
-    const {original_title, overview, id} = movie;
+    const {original_title, overview, id, backdrop_path} = movie;
+    // console.log(movie);
     return (
     <div>
         <VideoForeground title={original_title} overview={overview}/>
-        <VideoBackground movie_id={id}/>
+        <VideoBackground movie_poster={backdrop_path}/>
         <ExplorePage/>
     </div>);
 };
