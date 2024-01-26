@@ -2,8 +2,8 @@ import { IMG_CDN_URL } from "../utils/constants";
 
 const MovieCard = ({poster}) => {
     return (
-        <div className="w-48 min-w-48">
-            <img src={IMG_CDN_URL + poster}/>
+        <div className="w-[160px] ">
+            <img className='rounded-lg' src={IMG_CDN_URL + poster}/>
         </div>
     )
 };

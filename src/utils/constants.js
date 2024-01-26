@@ -19,5 +19,5 @@ export const supportedLang = [
     {"key":"en", name:"English"},
     {"key":"hindi", name:"Hindi"},
     {"key":"jpn", name:"Japenese"},
-    {"key":"itl", name:"Italian"},
-]
+    {"key":"itl", name:"Italian"},   
+];

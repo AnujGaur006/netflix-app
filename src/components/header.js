@@ -50,12 +50,12 @@ const Header = () => {
             {auth.currentUser && 
             
             <div className="flex p-2">  
-                { onSuggestionPage && 
+                {/* { onSuggestionPage && 
                 <select className="max-h-8 bg-gray-800 text-white" onChange={changeLang}>
                     {supportedLang.map((lang) => <option key={lang.key} value={lang.key}>{lang.name}</option>)}
                 </select>  }
                 <button onClick={handleGptSearchToggle} className="px-2 mx-4 max-h-12 align-middle rounded-lg text-white bg-purple-600">
-                   { onSuggestionPage ? "Back To HomePage" : "Search GPT"}</button>
+                   { onSuggestionPage ? "Back To HomePage" : "Search GPT"}</button> */}
                 <button onClick={handleSignOut} className="font-bold w-16 text-white text-xs border-1"><img className="object-contain" 
                     src='https://static.wikia.nocookie.net/925fa2de-087e-47f4-8aed-4f5487f0a78c/scale-to-width/755' alt='usericon'/>
                     Sign Out
