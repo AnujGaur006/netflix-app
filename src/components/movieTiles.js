@@ -8,7 +8,7 @@ const MovieTile = ({title, movies}) => {
             <div className="flex overflow-x-scroll custom-scrollbar">
                 <div className="flex gap-2">
                     {
-                        movies?.map((movie) => (<MovieCard key={movie.id} poster={movie.poster_path}/>))
+                        movies?.map((movie) => (<MovieCard key={movie.id} movie={movie}/>))
                     }
                 </div>
             </div> 

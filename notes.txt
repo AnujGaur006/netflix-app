@@ -79,6 +79,10 @@ checkpoint06 -
         -> Coming Soon
         -> Popular Movies    
 
+     -> add genre categore in foreground page
+     -> add watch now (redirect to trailer) and add watchlist 
+     -> info about each movie card on hover or click   
+
 
 
 
